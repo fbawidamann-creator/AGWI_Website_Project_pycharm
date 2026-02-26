@@ -1,6 +1,6 @@
 # AGWI Webapp Projekt (2. Semester)
 
-Dieses Projekt entstand im Modul **AGWI (Allgemeine Wirtschaftsinformatik)**.  
+Dieses Projekt entstand im Modul **AGWI (Angewandte Grundlagen der Wirtschaftsinformatik)**.  
 Ziel war es, eine Webanwendung von der Idee über die Modellierung bis zur prototypischen Umsetzung zu entwickeln.
 
 ## Inhalte
