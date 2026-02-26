@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainer-Buchungs-Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Trainer-Buchungs-Website</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" href="/">Startseite</a></li>
+                <li class="nav-item"><a class="nav-link" href="login">Login</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Hallen/Trainer</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="hallen">Hallen</a></li>
+                        <li><a class="dropdown-item" href="trainer">Trainer</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="bewerten">Bewerten</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link disabled" aria-disabled="true">Löschen</a></li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Eingabe" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Suche</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<!-- Content -->
+<div class="container mt-5">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="text-center">Trainer</h2>
+        <a href="/trainer/hinzufuegen" class="btn btn-success">Trainer hinzufügen</a>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        {% for trainer in trainers %}
+        <div class="col">
+            <div class="card h-100">
+                <img src="{{ trainer.image_url }}" class="card-img-top" alt="Bild von {{ trainer.name }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ trainer.name }}</h5>
+                    <p class="card-text">
+                        {{ trainer.email }}<br>
+                        Geburtsdatum: {{ trainer.birthday }}
+                    </p>
+                    <a href="/trainer/{{ trainer.trainerId }}" class="btn btn-primary">BEWERTEN</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

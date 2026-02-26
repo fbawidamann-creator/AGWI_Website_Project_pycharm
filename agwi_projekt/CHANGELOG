@@ -1,0 +1,47 @@
+--07.11.2024--
+
+*Upload von Plan der Webseite und erste html Datei*
+
+--14.11.2024--
+
+13:14Uhr
+*Webseite nun mit hinzugefuegter Navbar*
+
+14:55Uhr
+*Webseite nun besser unterteilt mit Möglichkeiten der Schnellsuche[einklappbar/ausklappbar]*
+*Vorgeschlagene Hallen/Trainer darunter*
+
+--22.11.2024--
+*FERTIGSTELLUNG der Diagramme[Klassen+Anwendungsfalldiagramm]*
+
+--14.12.2024--
+*Erstellung der dataclasses und hashmaps*
+*Seite Halle_Trainer schonmal erstellt*
+*Flask allgemeine verbesserungen in app.py*
+
+--17.12.2024 + 19.12.2024--
+*anpassungen der Klassen*
+*Neue Webseiten für Halle und Trainer mit Listen geändert im HTML-Code*
+*Hashmaps nun in qpp.py vorhanden/aus geschaeftsobjekte.py gelöscht*
+
+--21.12.2024--
+
+*Button[Hallen hinzufuegen] jetzt vorhanden*
+*Mit dazugehörigem formular zum ausfuellen*
+*Navigation geupdated*
+
+--11.01.2025--
+
+*Registrierung verfuegbar + Speichern in Datenbank*
+*Login verfuegbar + Abrufen in der Datenbank*
+
+--22.01.2025--
+
+*Erfolgreiche Implemntierung von Trainer/Hallen hinzuefuegen*
+*Liste der Hallen/Trainer werden jetzt von der Datenbank selected und angzeigt in html files!*
+
+--26.01.2025--
+
+*Anwendungsfaslldiagramm Neue Version mit ausgearbeiteten Features hinzugefuegt*
+*Klassendiagramm noch image_url hinzugefuegt*
+*README ueberarbeitet*
