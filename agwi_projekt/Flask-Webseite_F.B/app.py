@@ -6,10 +6,10 @@ from geschaeftsobjekte import Adresse, Halle, Trainer, Bewertung
 from datetime import date, datetime, timedelta
 
 # Konstanten für die Datenbankverbindung
-DB_USER = 'baf47399'
-DB_PASSWORD = 'baf47399'
-DB_HOST = 'hera.oth-regensburg.de'
-DB_NAME = 'baf47399'
+DB_USER = '?'
+DB_PASSWORD = '?'
+DB_HOST = '?'
+DB_NAME = '?'
 
 # Flask-App initialisieren
 app = Flask(__name__)
